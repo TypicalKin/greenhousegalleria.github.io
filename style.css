@@ -3,7 +3,7 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
     background-color: rgb(74, 148, 110);
-    background: url("https://i.imgur.com/QOOXxDW.png");
+    background: url("https://file.garden/aN7g2fP--BEI3iH_/gardengalleria/gardentiles1.png");
     background-repeat: repeat;
     animation: scrolling 10s linear infinite;
 }
@@ -38,24 +38,24 @@ a:active {
 /*Title Box*/
 .Titlebox {
     position: relative;
-    top: 50px;
-    bottom: 50px;
-    left: 50%;
+    top: 0px;
+    bottom: 0px;
+    left: 60%;
     transform: translateX(-90%);
-    margin-bottom: 100px;
-    width: 1085px;
-    height: 100px;
+    margin-bottom: 5px;
+    width: 1280px;
+    height: 200px;
     text-align: start;
-    line-height: 25px;
+    line-height: 55px;
     filter: drop-shadow(0px 0px 15px rgb(0, 0, 0));
-    background: no-repeat center/100% url("https://i.imgur.com/pDUtPBJ.png");
+    background: no-repeat center/75% url("https://file.garden/aN7g2fP--BEI3iH_/gardengalleria/arrow2.png");
     animation: slidingin 1s ease-in-out;
 }
 @keyframes slidingin {
-    from{background-position: -1000px 0px;
+    from{background-position: -1000px;
 
     }
-    to{background-position: 0px 0px;
+    to{background-position: 160px;
 
     }
 }
@@ -63,7 +63,7 @@ a:active {
 .Title {
     font-size: 55px;
     color: seagreen;
-    transform: translateX(-50px) translateY(130%);
+    transform: translateX(-5px) translateY(130%);
     text-shadow: rgb(34, 64, 48) 2px 2px;
     text-align: center;
     animation: slidingintext 1.25s ease-in-out;
@@ -75,7 +75,7 @@ a:active {
 
     to {
         position: static;
-        transform: translateX(-50px) translateY(130%);
+        transform: translateX(-5px) translateY(130%);
     }
 }
 /*h2 title*/
@@ -137,7 +137,7 @@ a:active {
     display: flex;
     /* border:5px solid rgb(247, 95, 125); */
 
-    width: 600px;
+    width: 400px;
     padding-top: 50px;
     flex-direction: column;
     align-items: center;
@@ -148,11 +148,11 @@ a:active {
 /*--------------------IMAGES--------------*/
 #artbox img {
     position:relative;
-    padding: 15px;
+    padding: 10px;
 
     cursor: pointer;
 
-    border:5px dashed rgb(175, 227, 190);
+    border:5px double rgb(175, 227, 190);
     border-radius: 20px;
     background-color:rgb(23, 51, 41);
     filter: drop-shadow(0px 0px 15px rgb(0, 0, 0));
@@ -215,6 +215,78 @@ a:active {
     0% { scale: 0.1 }
     100% { scale: 1.85 }
 }
+
+/*--------------------PIXEL BOX--------------------*/
+
+/*box for all images*/
+#pixbox {
+    position: relative;
+    display: inline-flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.artObj {
+    display: flex;
+    /* border:5px solid rgb(247, 95, 125); */
+
+    width: 400px;
+    padding-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+
+/*--------------------PIXEL ART---------------------*/
+.prObj {
+    position:relative;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+
+    
+
+}
+
+#pixbox img {
+    position:relative;
+    padding: 10px;
+
+    cursor: pointer;
+
+    border:5px double rgb(175, 227, 190);
+    border-radius: 20px;
+    background-color:rgb(23, 51, 41);
+    filter: drop-shadow(0px 0px 15px rgb(0, 0, 0));
+
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in-out;
+
+}
+
+#pixbox img:hover {
+    scale: 1.05;
+}
+
+.imgp {
+    font-size: 20px;
+    text-align: center;
+    color: #fcffad;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    margin: 0px;
+}
+
 /*--------------------PROJECT BOX--------------------*/
 
 #projectbox {
@@ -242,6 +314,8 @@ a:active {
 .prItem {
     margin-bottom: 50px;
 }
+
+
 
 /*--------------------------DESC BOX-----------------*/
 
